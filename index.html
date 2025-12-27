@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rakantham Crusher Solution - Premium quality spare parts for Jaw, Cone, and VSI crushers. Manufacturer and supplier of high-grade Mn18Cr2 industrial spares.">
+    <meta name="keywords" content="Stone Crusher Spares, Jaw Crusher Parts, Cone Crusher Mantle, VSI Spares, Rakantham, Complete Crushing Plant">
+    <title>Rakantham Crusher Solution | Premium Industrial Spares & Plants</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Config for Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-orange': '#f97316',
+                        'brand-dark': '#0f172a',
+                        'brand-gray': '#334155',
+                    },
+                    fontFamily: {
+                        sans: ['Roboto', 'sans-serif'],
+                        heading: ['Oswald', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8fafc;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Oswald', sans-serif;
+            letter-spacing: 0.05em;
+        }
+
+        /* Hero Section Overlay */
+        .hero-bg {
+            background-image: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.7)), url('https://images.unsplash.com/photo-1578320448767-1601cb89b4e5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* Card Hover Effects */
+        .product-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        /* Sticky Header Glassmorphism */
+        .glass-header {
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1e293b;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #f97316;
+            border-radius: 5px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #ea580c;
+        }
+
+        /* Animations */
+        @keyframes pulse-orange {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(249, 115, 22, 0.7); }
+            70% { box-shadow: 0 0 0 10px rgba(249, 115, 22, 0); }
+        }
+        .btn-pulse {
+            animation: pulse-orange 2s infinite;
+        }
+
+        /* Chat Widget Styles */
+        .chat-widget {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: 1000;
+        }
+        .chat-messages::-webkit-scrollbar {
+            width: 6px;
+        }
+        .chat-messages::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 3px;
+        }
+        .typing-dot {
+            animation: typing 1.4s infinite ease-in-out both;
+        }
+        .typing-dot:nth-child(1) { animation-delay: -0.32s; }
+        .typing-dot:nth-child(2) { animation-delay: -0.16s; }
+        
+        @keyframes typing {
+            0%, 80%, 100% { transform: scale(0); }
+            40% { transform: scale(1); }
+        }
+
+        /* Guide Specific Styles */
+        .guide-tab-btn.active {
+            background-color: #f97316; /* brand-orange */
+            color: white;
+            border-color: #f97316;
+        }
+        .guide-content {
+            display: none;
+            animation: fadeIn 0.5s;
+        }
+        .guide-content.active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        /* Language Toggle in Guide */
+        .hi-text { display: none; }
+        .guide-container.hindi-mode .en-text { display: none; }
+        .guide-container.hindi-mode .hi-text { display: inline-block; }
+        .guide-container.hindi-mode div.hi-text, 
+        .guide-container.hindi-mode p.hi-text, 
+        .guide-container.hindi-mode h3.hi-text, 
+        .guide-container.hindi-mode h4.hi-text, 
+        .guide-container.hindi-mode ul.hi-text,
+        .guide-container.hindi-mode ol.hi-text { display: block; }
+    </style>
+</head>
+<body class="text-slate-800 antialiased">
+
+    <!-- Header -->
+    <header id="main-header" class="fixed w-full top-0 z-50 transition-all duration-300 bg-brand-dark text-white py-2">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo Updated to Image -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <img src="./images/logo.png" alt="Rakantham Logo" class="h-12 w-auto object-contain transform group-hover:scale-105 transition-transform duration-300">
+                    <div class="flex flex-col">
+                        <span class="text-2xl font-bold font-heading uppercase leading-none tracking-wider">RAKANTHAM</span>
+                        <span class="text-xs text-gray-400 font-sans tracking-widest uppercase">Crusher Solutions</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex items-center gap-6">
+                    <a href="#home" class="text-sm font-medium hover:text-brand-orange transition-colors uppercase tracking-wide">Home</a>
+                    <a href="#products" class="text-sm font-medium hover:text-brand-orange transition-colors uppercase tracking-wide">Products</a>
+                    <a href="#about" class="text-sm font-medium hover:text-brand-orange transition-colors uppercase tracking-wide">About Us</a>
+                    <!-- New Button -->
+                    <a href="#survival-guide" class="text-sm font-bold bg-white text-brand-dark hover:bg-brand-orange hover:text-white px-3 py-1 rounded transition-colors uppercase tracking-wide border border-transparent shadow-sm">Owner's Guide</a>
+                    <a href="#contact" class="text-sm font-medium hover:text-brand-orange transition-colors uppercase tracking-wide">Contact</a>
+                </nav>
+
+                <!-- CTA Button -->
+                <div class="hidden md:block">
+                    <a href="https://wa.me/918923880893" target="_blank" class="bg-brand-orange hover:bg-orange-700 text-white px-6 py-2 rounded font-bold uppercase text-sm tracking-wide transition-colors btn-pulse flex items-center gap-2">
+                        <i class="fab fa-whatsapp"></i> Get Quote
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-white text-2xl focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-t border-slate-800 absolute w-full left-0">
+            <div class="flex flex-col p-4 space-y-4">
+                <a href="#home" class="mobile-link text-gray-300 hover:text-brand-orange">Home</a>
+                <a href="#products" class="mobile-link text-gray-300 hover:text-brand-orange">Products</a>
+                <a href="#about" class="mobile-link text-gray-300 hover:text-brand-orange">About Us</a>
+                <a href="#survival-guide" class="mobile-link text-white font-bold bg-brand-orange/20 p-2 rounded">Owner's Survival Guide</a>
+                <a href="#contact" class="mobile-link text-gray-300 hover:text-brand-orange">Contact</a>
+                <a href="https://wa.me/918923880893" class="bg-brand-orange text-white text-center py-3 rounded font-bold uppercase">Get Quote</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg h-screen flex items-center justify-center pt-16">
+        <div class="container mx-auto px-4 text-center text-white z-10">
+            <div class="inline-block px-3 py-1 mb-4 border border-orange-500 rounded-full bg-orange-500/10 backdrop-blur-sm">
+                <span class="text-brand-orange font-bold text-sm tracking-widest uppercase">Engineered for Performance</span>
+            </div>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+                COMPLETE <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-orange-600">CRUSHING PLANTS</span> & SPARES
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300 mb-10 max-w-2xl mx-auto font-light">
+                Complete 2-Stage & 3-Stage Crushing Plants (100-200 TPH) and Genuine Mn18Cr2 spares for Jaw, Cone, and VSI Crushers.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#products" class="bg-brand-orange hover:bg-orange-700 text-white px-8 py-4 rounded font-bold uppercase tracking-wider transition-all transform hover:-translate-y-1 shadow-lg shadow-orange-500/30">
+                    Explore Products
+                </a>
+                <button onclick="toggleChat()" class="bg-white hover:bg-gray-100 text-brand-dark px-8 py-4 rounded font-bold uppercase tracking-wider transition-all border border-transparent hover:border-brand-dark flex items-center justify-center gap-2">
+                    <i class="fas fa-robot text-brand-orange"></i> Ask Rakantham
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <div class="bg-brand-orange py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center divide-x divide-orange-400/50">
+                <div class="p-2">
+                    <div class="text-3xl font-heading font-bold text-white">PREMIUM</div>
+                    <div class="text-sm text-orange-100 uppercase mt-1">Mn18Cr2 / Mn22Cr2 Quality</div>
+                </div>
+                <div class="p-2">
+                    <div class="text-3xl font-heading font-bold text-white">100%</div>
+                    <div class="text-sm text-orange-100 uppercase mt-1">Quality Assurance</div>
+                </div>
+                <div class="p-2">
+                    <div class="text-3xl font-heading font-bold text-white">24/7</div>
+                    <div class="text-sm text-orange-100 uppercase mt-1">Support</div>
+                </div>
+                <div class="p-2">
+                    <div class="text-3xl font-heading font-bold text-white">Pan India</div>
+                    <div class="text-sm text-orange-100 uppercase mt-1">Delivery</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Products Section -->
+    <section id="products" class="py-20 bg-slate-50">
+        <div class="container mx-auto px-4">
+            <!-- Section Header -->
+            <div class="text-center mb-12">
+                <span class="text-brand-orange font-bold tracking-widest uppercase text-sm">Our Catalog</span>
+                <h2 class="text-4xl font-bold text-brand-dark mt-2 mb-4">PREMIUM CRUSHER SOLUTIONS</h2>
+                <div class="w-24 h-1 bg-brand-orange mx-auto rounded"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">From complete 200 TPH plants to precision spare parts. Compatible with global leaders like Metso, Sandvik, and Puzzolana.</p>
+            </div>
+
+            <!-- Filters -->
+            <div class="flex flex-wrap justify-center gap-3 mb-10">
+                <button class="filter-btn active bg-brand-dark text-white px-6 py-2 rounded-full font-medium transition-all shadow-md hover:shadow-lg" data-filter="all">All Products</button>
+                <button class="filter-btn bg-white text-gray-600 hover:bg-orange-50 hover:text-brand-orange border border-gray-200 px-6 py-2 rounded-full font-medium transition-all" data-filter="plants">Complete Plants</button>
+                <button class="filter-btn bg-white text-gray-600 hover:bg-orange-50 hover:text-brand-orange border border-gray-200 px-6 py-2 rounded-full font-medium transition-all" data-filter="jaw">Jaw Crusher</button>
+                <button class="filter-btn bg-white text-gray-600 hover:bg-orange-50 hover:text-brand-orange border border-gray-200 px-6 py-2 rounded-full font-medium transition-all" data-filter="cone">Cone Crusher</button>
+                <button class="filter-btn bg-white text-gray-600 hover:bg-orange-50 hover:text-brand-orange border border-gray-200 px-6 py-2 rounded-full font-medium transition-all" data-filter="vsi">VSI Crusher</button>
+                <button class="filter-btn bg-white text-gray-600 hover:bg-orange-50 hover:text-brand-orange border border-gray-200 px-6 py-2 rounded-full font-medium transition-all" data-filter="accessories">Accessories</button>
+            </div>
+
+            <!-- Grid -->
+            <div id="product-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Products injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- SURVIVAL GUIDE SECTION (Merged & Enhanced) -->
+    <section id="survival-guide" class="py-20 bg-white border-t border-gray-100">
+        <div id="guide-container" class="container mx-auto px-4 guide-container">
+            <!-- Header & Language Toggle -->
+            <div class="flex flex-col md:flex-row justify-between items-center mb-10">
+                <div class="text-center md:text-left mb-6 md:mb-0">
+                    <span class="text-brand-orange font-bold tracking-widest uppercase text-sm">Knowledge Base</span>
+                    <h2 class="text-4xl font-bold text-brand-dark mt-2">
+                        <span class="en-text">OWNER'S SURVIVAL GUIDE</span>
+                        <span class="hi-text">मालिकों के लिए सर्वाइवल गाइड</span>
+                    </h2>
+                    <p class="text-gray-600 mt-2 text-sm">
+                        <span class="en-text">Maintenance, Troubleshooting & ROI Analysis</span>
+                        <span class="hi-text">रखरखाव, समस्या निवारण और मुनाफा विश्लेषण</span>
+                    </p>
+                </div>
+                
+                <!-- Language Toggle Switch -->
+                <div class="flex items-center bg-gray-100 p-2 rounded-full border border-gray-300">
+                    <span class="text-xs font-bold text-gray-600 px-2">ENG</span>
+                    <label class="relative inline-flex items-center cursor-pointer">
+                        <input type="checkbox" id="guideLangToggle" class="sr-only peer" onchange="toggleGuideLanguage()">
+                        <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-brand-orange"></div>
+                    </label>
+                    <span class="text-xs font-bold text-gray-600 px-2">हिंदी</span>
+                </div>
+            </div>
+
+            <!-- Tabs Navigation -->
+            <div class="flex flex-wrap justify-center gap-2 mb-8 border-b border-gray-200 pb-4">
+                <button onclick="switchGuideTab('overview')" class="guide-tab-btn active px-4 py-2 rounded-md font-medium text-sm border hover:bg-orange-50 transition-colors">Overview</button>
+                <button onclick="switchGuideTab('jaw')" class="guide-tab-btn px-4 py-2 rounded-md font-medium text-sm border hover:bg-orange-50 transition-colors">Jaw Crusher</button>
+                <button onclick="switchGuideTab('cone')" class="guide-tab-btn px-4 py-2 rounded-md font-medium text-sm border hover:bg-orange-50 transition-colors">Cone Crusher</button>
+                <button onclick="switchGuideTab('vsi')" class="guide-tab-btn px-4 py-2 rounded-md font-medium text-sm border hover:bg-orange-50 transition-colors">VSI Crusher</button>
+                <button onclick="switchGuideTab('roi')" class="guide-tab-btn px-4 py-2 rounded-md font-medium text-sm border hover:bg-orange-50 transition-colors bg-green-50 text-green-700 border-green-200">ROI Calculator</button>
+            </div>
+
+            <!-- TAB CONTENT: OVERVIEW -->
+            <div id="tab-overview" class="guide-content active">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-red-50 p-6 rounded-lg border-l-4 border-red-500">
+                        <h3 class="text-xl font-bold text-red-700 mb-4 flex items-center">
+                            <i class="fas fa-exclamation-triangle mr-2"></i> 
+                            <span class="en-text">Main Problems</span><span class="hi-text">मुख्य समस्याएं</span>
+                        </h3>
+                        <ul class="space-y-2 text-sm text-gray-700 list-disc pl-5 en-text">
+                            <li>Improper Maintenance & not servicing on time</li>
+                            <li>Wrong Feed Material (Incorrect size/type)</li>
+                            <li>Overloading beyond capacity</li>
+                            <li>Poor Lubrication (Wrong oil grade)</li>
+                        </ul>
+                        <ul class="space-y-2 text-sm text-gray-700 list-disc pl-5 hi-text">
+                            <li>गलत रखरखाव और समय पर सर्विस न करना</li>
+                            <li>गलत फीड मटेरियल (गलत साइज/प्रकार)</li>
+                            <li>क्षमता से अधिक लोड डालना (ओवरलोडिंग)</li>
+                            <li>खराब लुब्रिकेशन (गलत तेल ग्रेड)</li>
+                        </ul>
+                    </div>
+                    <div class="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-500">
+                        <h3 class="text-xl font-bold text-yellow-700 mb-4 flex items-center">
+                            <i class="fas fa-star mr-2"></i> 
+                            <span class="en-text">Golden Rules</span><span class="hi-text">सुनहरे नियम</span>
+                        </h3>
+                        <ul class="space-y-2 text-sm text-gray-700 list-decimal pl-5 en-text">
+                            <li>Daily inspection for cracks & loose bolts</li>
+                            <li>Proper feeding (balance center/side)</li>
+                            <li>Follow lubrication schedule strictly</li>
+                            <li>Replace worn parts (liners/plates) on time</li>
+                        </ul>
+                        <ul class="space-y-2 text-sm text-gray-700 list-decimal pl-5 hi-text">
+                            <li>रोजाना क्रैक और ढीले बोल्ट चेक करें</li>
+                            <li>सही फीडिंग (बीच और साइड में बैलेंस रखें)</li>
+                            <li>लुब्रिकेशन शेड्यूल का सख्ती से पालन करें</li>
+                            <li>घिसे हुए पार्ट्स समय पर बदलें</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB CONTENT: JAW CRUSHER -->
+            <div id="tab-jaw" class="guide-content">
+                <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+                    <h3 class="text-2xl font-bold text-brand-dark mb-6 border-b pb-2">Jaw Crusher Guide</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Problem 1 -->
+                        <div class="bg-gray-50 p-4 rounded-md">
+                            <h4 class="font-bold text-brand-orange mb-2">
+                                <span class="en-text">Excessive Plate Wear</span><span class="hi-text">प्लेट का जल्दी घिसना</span>
+                            </h4>
+                            <p class="text-xs text-gray-500 mb-2 font-bold uppercase">Cause / कारण:</p>
+                            <p class="text-sm text-gray-700 mb-3">
+                                <span class="en-text">Metal in feed, Tight CSS, Wrong Mn grade.</span>
+                                <span class="hi-text">फीड में लोहा, टाइट CSS, गलत Mn ग्रेड।</span>
+                            </p>
+                            <p class="text-xs text-gray-500 mb-2 font-bold uppercase">Solution / समाधान:</p>
+                            <ul class="text-sm text-gray-700 list-disc pl-4">
+                                <li><span class="en-text">Use Mn18Cr2 plates</span><span class="hi-text">Mn18Cr2 प्लेट्स का उपयोग करें</span></li>
+                                <li><span class="en-text">Rotate plates every 200-300 hrs</span><span class="hi-text">हर 200-300 घंटे में प्लेट घुमाएं</span></li>
+                            </ul>
+                        </div>
+                        <!-- Problem 2 -->
+                        <div class="bg-gray-50 p-4 rounded-md">
+                            <h4 class="font-bold text-brand-orange mb-2">
+                                <span class="en-text">High Bearing Temp</span><span class="hi-text">बेयरिंग का गर्म होना</span>
+                            </h4>
+                            <p class="text-xs text-gray-500 mb-2 font-bold uppercase">Cause / कारण:</p>
+                            <p class="text-sm text-gray-700 mb-3">
+                                <span class="en-text">No grease, Wrong grease, Overloading.</span>
+                                <span class="hi-text">ग्रीस की कमी, गलत ग्रीस, ओवरलोडिंग।</span>
+                            </p>
+                            <p class="text-xs text-gray-500 mb-2 font-bold uppercase">Solution / समाधान:</p>
+                            <ul class="text-sm text-gray-700 list-disc pl-4">
+                                <li><span class="en-text">Use EP2/EP3 Lithium Grease</span><span class="hi-text">EP2/EP3 लिथियम ग्रीस का उपयोग करें</span></li>
+                                <li><span class="en-text">Fill only 50-70% cavity</span><span class="hi-text">केवल 50-70% जगह भरें</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB CONTENT: CONE CRUSHER -->
+            <div id="tab-cone" class="guide-content">
+                <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+                    <h3 class="text-2xl font-bold text-brand-dark mb-6 border-b pb-2">Cone Crusher Guide</h3>
+                    
+                    <div class="mb-6">
+                        <h4 class="font-bold text-brand-dark mb-3 flex items-center">
+                            <i class="fas fa-clipboard-check text-green-500 mr-2"></i>
+                            <span class="en-text">Daily Checklist</span><span class="hi-text">दैनिक चेकलिस्ट</span>
+                        </h4>
+                        <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 text-sm">
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 text-xs mr-2"></i> <span class="en-text">Check oil pressure (15-25 PSI)</span><span class="hi-text">ऑयल प्रेशर चेक करें (15-25 PSI)</span></li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 text-xs mr-2"></i> <span class="en-text">Inspect Bowl Liner & Mantle</span><span class="hi-text">बाउल लाइनर और मेंटल जांचें</span></li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 text-xs mr-2"></i> <span class="en-text">Check Sealing System</span><span class="hi-text">सीलिंग सिस्टम चेक करें</span></li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 text-xs mr-2"></i> <span class="en-text">Ensure Choke Feeding</span><span class="hi-text">चोक फीडिंग सुनिश्चित करें</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-red-50 p-4 rounded border-l-4 border-red-500">
+                        <h4 class="font-bold text-red-700">
+                            <span class="en-text">Oil Contamination?</span><span class="hi-text">तेल गंदा हो रहा है?</span>
+                        </h4>
+                        <p class="text-sm mt-1">
+                            <span class="en-text">Check dust seals and water cooling leakage immediately. Test oil every 100 hours.</span>
+                            <span class="hi-text">तुरंत डस्ट सील और वाटर कूलिंग लीकेज चेक करें। हर 100 घंटे में तेल टेस्ट करें।</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB CONTENT: VSI -->
+            <div id="tab-vsi" class="guide-content">
+                <div class="bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
+                    <h3 class="text-2xl font-bold text-brand-dark mb-6 border-b pb-2">VSI Crusher Guide</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="border p-4 rounded hover:shadow-md transition-shadow">
+                            <h4 class="font-bold text-brand-orange mb-2"><span class="en-text">Rotor Tips Wear</span><span class="hi-text">रोटर टिप्स घिसना</span></h4>
+                            <p class="text-sm text-gray-600 mb-2">
+                                <span class="en-text">Caused by abrasive silica or high RPM.</span>
+                                <span class="hi-text">सिलिका या हाई RPM के कारण।</span>
+                            </p>
+                            <div class="bg-green-50 p-2 rounded text-sm text-green-800 font-medium">
+                                <span class="en-text">Solution: Use Tungsten Carbide Tips</span>
+                                <span class="hi-text">समाधान: टंगस्टन कार्बाइड टिप्स का उपयोग करें</span>
+                            </div>
+                        </div>
+                        <div class="border p-4 rounded hover:shadow-md transition-shadow">
+                            <h4 class="font-bold text-brand-orange mb-2"><span class="en-text">Vibration</span><span class="hi-text">वाइब्रेशन</span></h4>
+                            <p class="text-sm text-gray-600 mb-2">
+                                <span class="en-text">Unbalanced rotor or broken tips.</span>
+                                <span class="hi-text">रोटर बैलेंस न होना या टिप्स टूटना।</span>
+                            </p>
+                            <div class="bg-green-50 p-2 rounded text-sm text-green-800 font-medium">
+                                <span class="en-text">Solution: Re-balance rotor immediately</span>
+                                <span class="hi-text">समाधान: रोटर को तुरंत बैलेंस करें</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB CONTENT: ROI CALCULATOR -->
+            <div id="tab-roi" class="guide-content">
+                <div class="bg-gradient-to-br from-slate-50 to-blue-50 p-6 rounded-lg border border-blue-100 shadow-sm">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold text-brand-dark">
+                            <span class="en-text">Downtime Loss Calculator</span>
+                            <span class="hi-text">ब्रेकडाउन लॉस कैलकुलेटर</span>
+                        </h3>
+                        <p class="text-sm text-gray-500">
+                            <span class="en-text">Calculate how much money you lose when your plant stops.</span>
+                            <span class="hi-text">कैलकुलेट करें कि प्लांट बंद होने पर कितना नुकसान होता है।</span>
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">
+                                <span class="en-text">Plant Capacity (TPH)</span><span class="hi-text">प्लांट क्षमता (TPH)</span>
+                            </label>
+                            <input type="number" id="capacity" value="200" class="w-full p-3 border border-gray-300 rounded focus:border-brand-orange focus:outline-none" oninput="calculateROI()">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">
+                                <span class="en-text">Profit per Ton (₹)</span><span class="hi-text">प्रति टन मुनाफा (₹)</span>
+                            </label>
+                            <input type="number" id="costPerTon" value="150" class="w-full p-3 border border-gray-300 rounded focus:border-brand-orange focus:outline-none" oninput="calculateROI()">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                        <div class="bg-white p-4 rounded shadow text-center border-t-4 border-orange-400">
+                            <p class="text-xs text-gray-500 uppercase font-bold"><span class="en-text">1 Hour Loss</span><span class="hi-text">1 घंटे का नुकसान</span></p>
+                            <p class="text-2xl font-bold text-brand-dark mt-1">₹ <span id="loss1hour">30,000</span></p>
+                        </div>
+                        <div class="bg-white p-4 rounded shadow text-center border-t-4 border-red-600">
+                            <p class="text-xs text-gray-500 uppercase font-bold"><span class="en-text">Full Day Loss (10 hrs)</span><span class="hi-text">पूरे दिन का नुकसान (10 घंटे)</span></p>
+                            <p class="text-2xl font-bold text-red-600 mt-1">₹ <span id="loss10hour">3,00,000</span></p>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <button onclick="sendROIWhatsApp()" class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full font-bold shadow-lg transition-transform hover:scale-105 flex items-center justify-center mx-auto gap-2">
+                            <i class="fab fa-whatsapp text-xl"></i> 
+                            <span class="en-text">Get Solutions on WhatsApp</span><span class="hi-text">WhatsApp पर समाधान पाएं</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="about" class="py-20 bg-brand-dark text-white relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-5" style="background-image: radial-gradient(#f97316 1px, transparent 1px); background-size: 30px 30px;"></div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2">
+                    <span class="text-brand-orange font-bold tracking-widest uppercase text-sm">Why Rakantham?</span>
+                    <h2 class="text-4xl font-bold mt-2 mb-6">BUILT TO LAST, <br>ENGINEERED TO PERFORM.</h2>
+                    <p class="text-gray-400 mb-6 text-lg leading-relaxed">
+                        At <span class="text-white font-bold">Rakantham Crusher Solution</span>, we understand that every minute of downtime costs money. Whether it's a complete 200 TPH plant or a single mantle, we ensure top-tier quality based on global standards.
+                    </p>
+                    
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <div class="mt-1 mr-4 w-6 h-6 bg-brand-orange rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-check text-xs text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold">World-Class Plant Technology</h4>
+                                <p class="text-sm text-gray-400">2-Stage & 3-Stage plants based on leading global designs.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="mt-1 mr-4 w-6 h-6 bg-brand-orange rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-check text-xs text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold">Superior Metallurgy</h4>
+                                <p class="text-sm text-gray-400">Certified High Manganese Steel (Mn18/Mn22) spares.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="mt-1 mr-4 w-6 h-6 bg-brand-orange rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-check text-xs text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold">Rapid Dispatch</h4>
+                                <p class="text-sm text-gray-400">Large inventory ready for immediate shipping.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lg:w-1/2 relative">
+                    <div class="relative rounded-lg overflow-hidden border-4 border-slate-700 shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Industrial Factory" class="w-full object-cover">
+                        <div class="absolute bottom-0 left-0 bg-brand-orange px-6 py-4">
+                            <p class="font-heading font-bold text-2xl">EST. 2025</p>
+                            <p class="text-xs uppercase tracking-wider">Trusted Quality</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands/Models Support -->
+    <section class="py-12 bg-gray-100 border-b border-gray-200">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-500 uppercase tracking-widest font-bold mb-8 text-sm">Compatible With Models From</p>
+            <div class="flex flex-wrap justify-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                <!-- Using Text as placeholders for Logos to avoid broken images -->
+                <h3 class="text-3xl font-heading font-bold text-slate-700 hover:text-brand-orange cursor-default">METSO</h3>
+                <h3 class="text-3xl font-heading font-bold text-slate-700 hover:text-brand-orange cursor-default">SANDVIK</h3>
+                <h3 class="text-3xl font-heading font-bold text-slate-700 hover:text-brand-orange cursor-default">PUZZOLANA</h3>
+                <h3 class="text-3xl font-heading font-bold text-slate-700 hover:text-brand-orange cursor-default">TEREX</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div>
+                    <span class="text-brand-orange font-bold tracking-widest uppercase text-sm">Get In Touch</span>
+                    <h2 class="text-4xl font-bold text-brand-dark mt-2 mb-6">REQUEST A QUOTE</h2>
+                    <p class="text-gray-600 mb-8">Need specific parts or a complete plant setup? Contact our sales team today. We usually respond within 1 hour.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-slate-100 rounded flex items-center justify-center mr-4 text-brand-orange text-xl">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-brand-dark">Head Office</h4>
+                                <p class="text-gray-600 text-sm">SCF-66, Unit No. 260, 2nd Floor, LNT Co-Working,<br>Govt. College Road, Sector 16A,<br>Faridabad, Haryana - 121006</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-slate-100 rounded flex items-center justify-center mr-4 text-brand-orange text-xl">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-brand-dark">Phone Support</h4>
+                                <p class="text-gray-600 text-sm">+91 89238 80893</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <div class="w-12 h-12 bg-slate-100 rounded flex items-center justify-center mr-4 text-brand-orange text-xl">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-brand-dark">Email</h4>
+                                <p class="text-gray-600 text-sm">rakanthamcrushersolutions@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form/Map Area -->
+                <div class="bg-slate-50 p-8 rounded-lg border border-slate-200 shadow-inner">
+                    <h3 class="text-2xl font-bold mb-6 font-heading">Send us a message</h3>
+                    <form onsubmit="event.preventDefault(); window.open('https://wa.me/918923880893', '_blank');">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-gray-500 mb-1">Name</label>
+                                <input type="text" class="w-full bg-white border border-gray-300 rounded p-3 focus:outline-none focus:border-brand-orange" placeholder="Your Name">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-gray-500 mb-1">Phone</label>
+                                <input type="tel" class="w-full bg-white border border-gray-300 rounded p-3 focus:outline-none focus:border-brand-orange" placeholder="Your Number">
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-xs font-bold uppercase text-gray-500 mb-1">Requirement</label>
+                            <select class="w-full bg-white border border-gray-300 rounded p-3 focus:outline-none focus:border-brand-orange text-gray-600">
+                                <option>Complete Crushing Plant</option>
+                                <option>Jaw Crusher Spares</option>
+                                <option>Cone Crusher Spares</option>
+                                <option>VSI Spares</option>
+                                <option>Accessories</option>
+                                <option>General Inquiry</option>
+                            </select>
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-xs font-bold uppercase text-gray-500 mb-1">Message</label>
+                            <textarea class="w-full bg-white border border-gray-300 rounded p-3 focus:outline-none focus:border-brand-orange h-32" placeholder="Tell us about your machine model and parts needed..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-brand-dark hover:bg-brand-orange text-white font-bold py-4 rounded transition-colors uppercase tracking-widest flex items-center justify-center gap-2">
+                            Send via WhatsApp <i class="fab fa-whatsapp text-lg"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-300 pt-16 border-t border-slate-800">
+        <div class="container mx-auto px-4 pb-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <!-- Col 1 - Logo Updated Here Too -->
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <img src="./images/logo.png" alt="Rakantham Logo" class="h-10 w-auto bg-white rounded p-1">
+                        <h3 class="text-white text-2xl font-heading font-bold uppercase">Rakantham</h3>
+                    </div>
+                    <p class="text-sm leading-relaxed mb-6 text-gray-400">
+                        Your trusted partner for premium stone crusher spares. We ensure your plant keeps running with minimum downtime and maximum efficiency.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded bg-slate-800 flex items-center justify-center hover:bg-brand-orange hover:text-white transition-colors"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 rounded bg-slate-800 flex items-center justify-center hover:bg-brand-orange hover:text-white transition-colors"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded bg-slate-800 flex items-center justify-center hover:bg-brand-orange hover:text-white transition-colors"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Col 2 -->
+                <div>
+                    <h4 class="text-white font-bold uppercase tracking-wider mb-6">Quick Links</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#home" class="hover:text-brand-orange transition-colors">Home</a></li>
+                        <li><a href="#products" class="hover:text-brand-orange transition-colors">All Products</a></li>
+                        <li><a href="#models" class="hover:text-brand-orange transition-colors">Supported Models</a></li>
+                        <li><a href="#contact" class="hover:text-brand-orange transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3 -->
+                <div>
+                    <h4 class="text-white font-bold uppercase tracking-wider mb-6">Our Products</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="#" class="hover:text-brand-orange transition-colors">Complete Plants</a></li>
+                        <li><a href="#" class="hover:text-brand-orange transition-colors">Jaw Plates</a></li>
+                        <li><a href="#" class="hover:text-brand-orange transition-colors">Cone Mantles</a></li>
+                        <li><a href="#" class="hover:text-brand-orange transition-colors">VSI Rotor Tips</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4 -->
+                <div>
+                    <h4 class="text-white font-bold uppercase tracking-wider mb-6">Legal</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex justify-between">
+                            <span>GSTIN:</span>
+                            <span class="text-white font-mono">06FTFPS5696B1ZA</span>
+                        </li>
+                    </ul>
+                    <div class="mt-6 p-4 bg-slate-800 rounded border border-slate-700">
+                        <p class="text-xs text-center italic">"You built the plant to run, not to repair"</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-slate-800 pt-8 text-center text-xs text-gray-500 mb-8">
+                <p>&copy; 2025 Rakantham Crusher Solution. All rights reserved.</p>
+            </div>
+        </div>
+
+        <!-- Disclaimer Section -->
+        <div class="bg-slate-950 py-6 text-center">
+            <div class="container mx-auto px-4">
+                <p class="text-[10px] text-gray-600 leading-relaxed max-w-4xl mx-auto">
+                    Disclaimer: "Metso, Sandvik, Puzzolana, and Terex are registered trademarks of their respective owners. RAKANTHAM CRUSHER SOLUTION is not an authorized dealer, affiliate, or representative of these brands. The use of any brand names, model numbers, or trademarks is strictly for reference and identification purposes only, to indicate the compatibility of our aftermarket parts with the respective equipment. All parts supplied are by RAKANTHAM CRUSHER SOLUTION and are not Original Equipment Manufacturer (OEM) parts."
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GEMINI AI CHAT WIDGET -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <!-- Toggle Button -->
+        <button id="chat-toggle-btn" onclick="toggleChat()" class="bg-brand-orange hover:bg-orange-700 text-white w-14 h-14 rounded-full shadow-lg flex items-center justify-center transition-all transform hover:scale-105 btn-pulse">
+            <i class="fas fa-robot text-2xl"></i>
+        </button>
+
+        <!-- Chat Window -->
+        <div id="ai-chat-window" class="hidden bg-white w-80 md:w-96 rounded-2xl shadow-2xl border border-gray-200 overflow-hidden flex flex-col mb-4 absolute bottom-16 right-0 transition-all duration-300 transform origin-bottom-right scale-90 opacity-0">
+            <!-- Header -->
+            <div class="bg-brand-dark p-4 flex justify-between items-center text-white">
+                <div class="flex items-center gap-2">
+                    <div class="w-8 h-8 bg-brand-orange rounded-full flex items-center justify-center">
+                        <i class="fas fa-robot text-sm"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-sm">RAKANTHAM ✨</h4>
+                        <p class="text-xs text-gray-300">Expert Support</p>
+                    </div>
+                </div>
+                <button onclick="toggleChat()" class="text-gray-400 hover:text-white"><i class="fas fa-times"></i></button>
+            </div>
+
+            <!-- Messages Area -->
+            <div id="chat-messages" class="h-80 overflow-y-auto p-4 bg-gray-50 space-y-3 chat-messages">
+                <!-- Initial Language Selector (Will be handled by JS, but keeping structure here if needed for dynamic injection) -->
+                <div id="language-selector" class="flex gap-2">
+                    <div class="w-auto px-2 h-8 bg-brand-dark rounded-full flex items-center justify-center flex-shrink-0 text-white text-[10px] mt-1 font-bold">RAKANTHAM</div>
+                    <div class="bg-white border border-gray-200 p-3 rounded-lg rounded-tl-none shadow-sm text-sm text-gray-700">
+                        <p class="mb-2 font-bold text-brand-dark">Namaste! 🙏</p>
+                        <p class="mb-3 text-gray-600">Please select your preferred language / कृपया अपनी भाषा चुनें:</p>
+                        <div class="flex gap-2">
+                            <button onclick="setLanguage('English')" class="bg-brand-orange text-white px-3 py-1 rounded text-xs hover:bg-orange-600 transition-colors shadow-sm">English</button>
+                            <button onclick="setLanguage('Hindi')" class="bg-brand-orange text-white px-3 py-1 rounded text-xs hover:bg-orange-600 transition-colors shadow-sm">हिंदी</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Input Area -->
+            <div class="p-3 bg-white border-t border-gray-100">
+                <form onsubmit="handleChatSubmit(event)" class="relative">
+                    <input type="text" id="user-input" class="w-full bg-gray-100 border border-transparent focus:bg-white focus:border-brand-orange rounded-full pl-4 pr-12 py-2 text-sm focus:outline-none transition-colors" placeholder="Ask about Jaw plates, Mantles...">
+                    <button type="submit" class="absolute right-1 top-1 w-8 h-8 bg-brand-orange text-white rounded-full flex items-center justify-center hover:bg-orange-600 transition-colors">
+                        <i class="fas fa-paper-plane text-xs"></i>
+                    </button>
+                </form>
+                <div class="text-center mt-2">
+                    <span class="text-[10px] text-gray-400">Powered by Gemini AI ✨</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript logic -->
+    <script>
+        // ----------------------------------------------------------------------
+        // !!! IMPORTANT: PUT YOUR GEMINI API KEY HERE !!!
+        // ----------------------------------------------------------------------
+        const API_KEY = "AIzaSyAj0DrFAnyUparu9RLg4g8R6qpUQImO2ck."; 
+        // ----------------------------------------------------------------------
+
+        // Data Source
+        const products = [
+            // COMPLETE PLANTS
+            { id: 101, title: "100 TPH Crusher Plant", description: "Complete 2-Stage/3-Stage plant based on world-class technology. Ideal for aggregate production.", category: "plants", image: "./images/100tph-plant.jpg" },
+            { id: 102, title: "150 TPH Crusher Plant", description: "High-capacity 3-Stage crushing plant for granite & basalt. Includes Jaw, Cone & VSI.", category: "plants", image: "./images/150tph-plant.jpg" },
+            { id: 103, title: "200 TPH Aggregate Plant", description: "Heavy-duty 200 TPH stationary plant. Advanced design for maximum output & efficiency.", category: "plants", image: "./images/200tph-plant.jpg" },
+            // Jaw Crusher Spares
+            { id: 1, title: "Fixed Jaw Plate (Mn18)", description: "Premium Mn18Cr2 steel. Essential primary crushing component.", category: "jaw", image: "./images/fixed-jaw-plate.jpg" },
+            { id: 2, title: "Swing Jaw Plate (Mn18)", description: "High-grade manganese steel swing plate for C-Series & CJ Series.", category: "jaw", image: "./images/swing-jaw-plate.jpg" },
+            { id: 3, title: "Cheek Plates", description: "Side protection plates for jaw crushers. High wear resistance.", category: "jaw", image: "./images/cheek-plates.jpg" },
+            { id: 4, title: "Toggle Plate & Seat", description: "Engineered safety toggle plate and seat mechanism.", category: "jaw", image: "./images/toggle-plate.jpg" },
+            { id: 5, title: "Flywheel", description: "Balanced flywheel for smooth jaw crusher operation.", category: "jaw", image: "./images/flywheel.jpg" },
+            { id: 6, title: "Eccentric Shaft", description: "Heavy-duty forged steel eccentric shaft for jaw crushers.", category: "jaw", image: "./images/eccentric-shaft.jpg" },
+            { id: 7, title: "Side Plates", description: "Structural side plates for enhanced crusher frame durability.", category: "jaw", image: "./images/side-plates.jpg" },
+            { id: 8, title: "C106 Pitman", description: "Complete Pitman assembly for C106 model jaw crushers.", category: "jaw", image: "./images/pitman.jpg" },
+            // Cone Crusher Spares
+            { id: 9, title: "Mantle (Mn18/Mn22)", description: "High manganese mantle for secondary crushing (HP/GP/CH Series).", category: "cone", image: "./images/mantle.jpg" },
+            { id: 10, title: "Concave / Bowl Liner", description: "Durable concave liners ensuring uniform crushing chamber wear.", category: "cone", image: "./images/concave.jpg" },
+            { id: 11, title: "Torch Ring", description: "Essential torch ring component for cone crusher maintenance.", category: "cone", image: "./images/torch-ring.jpg" },
+            { id: 12, title: "Socket Liner", description: "Precision machined socket liner for smooth head rotation.", category: "cone", image: "./images/socket-liner.jpg" },
+            { id: 13, title: "Spider Bushing", description: "High-quality bronze spider bushing for top support reliability.", category: "cone", image: "./images/spider-bushing.jpg" },
+            { id: 14, title: "Arm Guard", description: "Protective arm guards to prevent wear on spider arms.", category: "cone", image: "./images/arm-guard.jpg" },
+            { id: 15, title: "Dust Seal", description: "Effective dust seal to protect internal components from debris.", category: "cone", image: "./images/dust-seal.jpg" },
+            { id: 16, title: "Eccentric Bush", description: "Bronze eccentric bush for reliable cone crusher operation.", category: "cone", image: "./images/eccentric-bush.jpg" },
+            // VSI & Accessories
+            { id: 17, title: "Rotor Tips (Tungsten Carbide)", description: "Long-life TC rotor tips for VSI crushers. High abrasion resistance.", category: "vsi", image: "./images/rotor-tips.jpg" },
+            { id: 18, title: "Cavity Wear Plates", description: "Wear plates to protect VSI crushing chamber.", category: "vsi", image: "./images/cavity-wear-plates.jpg" },
+            { id: 19, title: "Distributor Plate", description: "Distributor plate for even feed distribution in VSI rotors.", category: "vsi", image: "./images/distributor-plate.jpg" },
+            { id: 20, title: "Feed Tube", description: "Durable feed tube for guiding material into the VSI rotor.", category: "vsi", image: "./images/feed-tube.jpg" },
+            { id: 21, title: "Upper Wear Plate", description: "Upper wear protection for VSI crusher internals.", category: "vsi", image: "./images/upper-wear-plate.jpg" },
+            { id: 22, title: "Conveyor Roll", description: "Heavy-duty steel conveyor rollers for material handling.", category: "accessories", image: "./images/conveyor-roll.jpg" },
+            { id: 23, title: "Conveyor Belt", description: "Industrial rubber conveyor belts. Heat/Tear resistant options.", category: "accessories", image: "./images/conveyor-belt.jpg" },
+            { id: 24, title: "Conveyor Gear Box", description: "Reliable gear boxes for conveyor drive systems.", category: "accessories", image: "./images/gear-box.jpg" },
+        ];
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Sticky Header Effect
+        const header = document.getElementById('main-header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('glass-header', 'py-2');
+                header.classList.remove('bg-brand-dark', 'py-4');
+            } else {
+                header.classList.remove('glass-header', 'py-2');
+                header.classList.add('bg-brand-dark', 'py-4');
+            }
+        });
+
+        // Render Products
+        const productGrid = document.getElementById('product-grid');
+
+        function renderProducts(filter = 'all') {
+            productGrid.innerHTML = '';
+            productGrid.style.opacity = '0';
+            setTimeout(() => productGrid.style.opacity = '1', 200);
+
+            const filtered = filter === 'all' ? products : products.filter(p => p.category === filter || p.category === 'all');
+
+            if(filtered.length === 0) {
+                productGrid.innerHTML = `<div class="col-span-3 text-center py-10 text-gray-500">No products found in this category.</div>`;
+                return;
+            }
+
+            filtered.forEach(product => {
+                const whatsappMsg = `Hi Rakantham, I am interested in ${product.title}.`;
+                const whatsappLink = `https://wa.me/918923880893?text=${encodeURIComponent(whatsappMsg)}`;
+
+                const card = document.createElement('div');
+                card.className = 'bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100 product-card flex flex-col h-full';
+                card.innerHTML = `
+                    <div class="h-56 overflow-hidden relative group">
+                        <img src="${product.image}" alt="${product.title}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" onerror="this.src='https://placehold.co/600x400?text=No+Image'">
+                        <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300"></div>
+                        <span class="absolute top-4 right-4 bg-brand-orange text-white text-xs font-bold px-2 py-1 rounded uppercase tracking-wider">${product.category === 'all' ? 'General' : product.category === 'plants' ? 'Plant' : product.category}</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-xl font-bold font-heading text-brand-dark mb-2">${product.title}</h3>
+                        <p class="text-gray-600 text-sm mb-4 flex-1 line-clamp-3">${product.description}</p>
+                        <a href="${whatsappLink}" target="_blank" class="block w-full text-center border-2 border-brand-dark text-brand-dark hover:bg-brand-dark hover:text-white font-bold py-2 rounded transition-colors uppercase text-sm tracking-wide">
+                            <i class="fab fa-whatsapp mr-1"></i> Enquire Now
+                        </a>
+                    </div>
+                `;
+                productGrid.appendChild(card);
+            });
+        }
+
+        // Filter Logic
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class
+                filterBtns.forEach(b => {
+                    b.classList.remove('bg-brand-dark', 'text-white', 'active', 'shadow-md');
+                    b.classList.add('bg-white', 'text-gray-600', 'border');
+                });
+                
+                // Add active class
+                btn.classList.remove('bg-white', 'text-gray-600', 'border');
+                btn.classList.add('bg-brand-dark', 'text-white', 'active', 'shadow-md');
+                
+                renderProducts(btn.dataset.filter);
+            });
+        });
+
+        // Initialize
+        renderProducts();
+
+        // --------------------------------------------------------
+        // SMOOTH SCROLL FIX
+        // --------------------------------------------------------
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') {
+                    e.preventDefault();
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                    return;
+                }
+                try {
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        e.preventDefault();
+                        targetElement.scrollIntoView({ behavior: 'smooth' });
+                    }
+                } catch (err) {
+                    console.log("Scroll target not found for selector:", targetId);
+                }
+            });
+        });
+
+        // --------------------------------------------------------
+        // GUIDE SECTION SCRIPTS
+        // --------------------------------------------------------
+        
+        function switchGuideTab(tabId) {
+            // Hide all contents
+            document.querySelectorAll('.guide-content').forEach(el => {
+                el.classList.remove('active');
+            });
+            // Remove active class from buttons
+            document.querySelectorAll('.guide-tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+                btn.classList.add('border', 'hover:bg-orange-50');
+                btn.classList.remove('bg-brand-orange', 'text-white', 'border-brand-orange');
+            });
+
+            // Show selected content
+            document.getElementById('tab-' + tabId).classList.add('active');
+            
+            // Highlight selected button (find by click handler string)
+            const activeBtn = Array.from(document.querySelectorAll('.guide-tab-btn')).find(b => b.getAttribute('onclick').includes(tabId));
+            if(activeBtn) {
+                activeBtn.classList.add('active');
+            }
+        }
+
+        function toggleGuideLanguage() {
+            const isChecked = document.getElementById('guideLangToggle').checked;
+            const container = document.getElementById('guide-container');
+            if(isChecked) {
+                container.classList.add('hindi-mode');
+            } else {
+                container.classList.remove('hindi-mode');
+            }
+        }
+
+        function calculateROI() {
+            const capacity = parseFloat(document.getElementById('capacity').value) || 0;
+            const costPerTon = parseFloat(document.getElementById('costPerTon').value) || 0;
+
+            const loss1hour = capacity * costPerTon * 1;
+            const loss10hour = capacity * costPerTon * 10;
+
+            document.getElementById('loss1hour').textContent = loss1hour.toLocaleString('en-IN');
+            document.getElementById('loss10hour').textContent = loss10hour.toLocaleString('en-IN');
+        }
+
+        function sendROIWhatsApp() {
+            const capacity = document.getElementById('capacity').value;
+            const costPerTon = document.getElementById('costPerTon').value;
+            const loss1 = document.getElementById('loss1hour').textContent;
+            const loss10 = document.getElementById('loss10hour').textContent;
+
+            const msg = `Hi Rakantham, I calculated my downtime loss.\nCapacity: ${capacity} TPH\nProfit/Ton: ₹${costPerTon}\n\nMy Potential Loss:\n1 Hour: ₹${loss1}\n1 Day (10hr): ₹${loss10}\n\nI need a solution to prevent this breakdown.`;
+            
+            window.open(`https://wa.me/918923880893?text=${encodeURIComponent(msg)}`, '_blank');
+        }
+
+        // Initialize ROI on load
+        calculateROI();
+
+
+        // --------------------------------------------------------
+        // GEMINI AI INTEGRATION
+        // --------------------------------------------------------
+
+        let chatLanguage = null;
+
+        function toggleChat() {
+            const chatWindow = document.getElementById('ai-chat-window');
+            const toggleBtn = document.getElementById('chat-toggle-btn');
+            
+            if (chatWindow.classList.contains('hidden')) {
+                chatWindow.classList.remove('hidden');
+                setTimeout(() => {
+                    chatWindow.classList.remove('scale-90', 'opacity-0');
+                    chatWindow.classList.add('scale-100', 'opacity-100');
+                }, 10);
+                toggleBtn.innerHTML = '<i class="fas fa-times text-2xl"></i>';
+            } else {
+                chatWindow.classList.remove('scale-100', 'opacity-100');
+                chatWindow.classList.add('scale-90', 'opacity-0');
+                setTimeout(() => {
+                    chatWindow.classList.add('hidden');
+                }, 300);
+                toggleBtn.innerHTML = '<i class="fas fa-robot text-2xl"></i>';
+            }
+        }
+
+        function setLanguage(lang) {
+            chatLanguage = lang;
+            document.getElementById('language-selector').style.display = 'none';
+            
+            const greeting = lang === 'Hindi' 
+                ? "नमस्ते! मैं रकांथम का एक्सपर्ट हूँ। बताइए, आज मैं आपकी क्या मदद कर सकता हूँ?" 
+                : "Hello! I am Rakantham's expert assistant. How can I help you with your crusher spare parts today?";
+            
+            addMessageToUI('ai', greeting);
+        }
+
+        async function handleChatSubmit(e) {
+            e.preventDefault();
+            const inputEl = document.getElementById('user-input');
+            const message = inputEl.value.trim();
+            if (!message) return;
+
+            // Ensure Language is selected
+            if (!chatLanguage) {
+                alert("Please select a language first / कृपया पहले भाषा चुनें");
+                return;
+            }
+
+            // Clear input
+            inputEl.value = '';
+            addMessageToUI('user', message);
+
+            const loadingId = addLoadingIndicator();
+
+            try {
+                const response = await callGeminiAPI(message);
+                removeLoadingIndicator(loadingId);
+                addMessageToUI('ai', response);
+            } catch (error) {
+                console.error("AI Error:", error);
+                removeLoadingIndicator(loadingId);
+                addMessageToUI('ai', error.message || "Error connecting to AI. Please check your internet.");
+            }
+        }
+
+        function addMessageToUI(sender, text) {
+            const chatBox = document.getElementById('chat-messages');
+            const isAI = sender === 'ai';
+            
+            const msgHTML = `
+                <div class="flex gap-2 ${isAI ? '' : 'flex-row-reverse'}">
+                    <div class="${isAI ? 'w-auto px-2' : 'w-8'} h-8 ${isAI ? 'bg-brand-dark' : 'bg-brand-orange'} rounded-full flex items-center justify-center flex-shrink-0 text-white ${isAI ? 'text-[10px] font-bold' : 'text-xs'} mt-1">
+                        ${isAI ? 'RAKANTHAM' : '<i class="fas fa-user"></i>'}
+                    </div>
+                    <div class="${isAI ? 'bg-white border border-gray-200 text-gray-700' : 'bg-brand-orange text-white'} p-3 rounded-lg ${isAI ? 'rounded-tl-none' : 'rounded-tr-none'} shadow-sm text-sm">
+                        ${text}
+                    </div>
+                </div>
+            `;
+            
+            chatBox.insertAdjacentHTML('beforeend', msgHTML);
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+
+        function addLoadingIndicator() {
+            const id = 'loading-' + Date.now();
+            const chatBox = document.getElementById('chat-messages');
+            const html = `
+                <div id="${id}" class="flex gap-2">
+                    <div class="w-auto px-2 h-8 bg-brand-dark rounded-full flex items-center justify-center flex-shrink-0 text-white text-[10px] mt-1 font-bold">RAKANTHAM</div>
+                    <div class="bg-white border border-gray-200 p-4 rounded-lg rounded-tl-none shadow-sm flex gap-1 items-center">
+                        <div class="w-2 h-2 bg-gray-400 rounded-full typing-dot"></div>
+                        <div class="w-2 h-2 bg-gray-400 rounded-full typing-dot"></div>
+                        <div class="w-2 h-2 bg-gray-400 rounded-full typing-dot"></div>
+                    </div>
+                </div>
+            `;
+            chatBox.insertAdjacentHTML('beforeend', html);
+            chatBox.scrollTop = chatBox.scrollHeight;
+            return id;
+        }
+
+        function removeLoadingIndicator(id) {
+            const el = document.getElementById(id);
+            if (el) el.remove();
+        }
+
+        async function callGeminiAPI(userQuery) {
+            if (!API_KEY || API_KEY === "YAHAN_APNI_API_KEY_DALEN") {
+                throw new Error("API Key missing! Please open the index.html file in Notepad and add your key at line 720.");
+            }
+
+            const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${API_KEY}`;
+
+            const systemPrompt = `You are an expert technical support engineer for Rakantham Crusher Solutions. 
+            You specialize in stone crusher maintenance, spare parts (Jaw, Cone, and VSI crushers), and Complete Crushing Plants (100-200 TPH).
+            
+            IMPORTANT: The user has selected ${chatLanguage} as their preferred language.
+            Respond strictly in ${chatLanguage}. If Hindi is selected, use Devanagari script.
+            
+            Your goals:
+            1. Help customers identify the right parts from our catalog (Mantles, Jaw Plates, Rotor Tips, etc.).
+            2. Advise on Complete Plant setups (2-Stage vs 3-Stage) for different capacities (100 TPH, 150 TPH, 200 TPH).
+            3. Provide short, practical maintenance advice (e.g., how to check wear, when to replace).
+            4. Always be professional, concise, and helpful.
+            5. If a user asks for a price, kindly ask them to click the "Get Quote" button or contact via WhatsApp.
+            
+            Key Products: Mn18Cr2 Jaw Plates, High Manganese Mantles, Tungsten Carbide Rotor Tips, Complete Crushing Plants.
+            `;
+
+            const payload = {
+                contents: [{
+                    parts: [{ text: userQuery }]
+                }],
+                systemInstruction: {
+                    parts: [{ text: systemPrompt }]
+                }
+            };
+
+            const response = await fetch(url, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            });
+
+            if (!response.ok) {
+                throw new Error('API Request Failed. Check your API Key.');
+            }
+
+            const data = await response.json();
+            return data.candidates?.[0]?.content?.parts?.[0]?.text || "I'm not sure about that. Please contact our engineer on WhatsApp.";
+        }
+    </script>
+</body>
+</html>

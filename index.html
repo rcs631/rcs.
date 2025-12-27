@@ -10,8 +10,8 @@
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Font Awesome (Updated to 6.6.0 for X-Twitter Icon) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -51,11 +51,12 @@
 
         /* Hero Section Overlay */
         .hero-bg {
-            background-image: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.7)), url('https://images.unsplash.com/photo-1578320448767-1601cb89b4e5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-image: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.7)), url('./images/150tph-plant.jpg'); 
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+            background-color: #0f172a; 
         }
 
         /* Card Hover Effects */
@@ -156,9 +157,9 @@
     <header id="main-header" class="fixed w-full top-0 z-50 transition-all duration-300 bg-brand-dark text-white py-2">
         <div class="container mx-auto px-4 md:px-6">
             <div class="flex justify-between items-center h-16">
-                <!-- Logo Updated to Image -->
+                <!-- Logo Updated to Image (Name corrected to Logo.png) -->
                 <a href="#" class="flex items-center gap-3 group">
-                    <img src="./images/logo.png" alt="Rakantham Logo" class="h-12 w-auto object-contain transform group-hover:scale-105 transition-transform duration-300">
+                    <img src="./images/Logo.png" alt="Rakantham Logo" class="h-12 w-auto object-contain transform group-hover:scale-105 transition-transform duration-300 bg-white rounded p-1">
                     <div class="flex flex-col">
                         <span class="text-2xl font-bold font-heading uppercase leading-none tracking-wider">RAKANTHAM</span>
                         <span class="text-xs text-gray-400 font-sans tracking-widest uppercase">Crusher Solutions</span>
@@ -584,12 +585,18 @@
     <!-- Contact Section -->
     <section id="contact" class="py-20 bg-white">
         <div class="container mx-auto px-4">
+            <!-- Header -->
+            <div class="text-center mb-12">
+                <span class="text-brand-orange font-bold tracking-widest uppercase text-sm">Get In Touch</span>
+                <h2 class="text-4xl font-bold text-brand-dark mt-2 mb-4">REQUEST A QUOTE</h2>
+                <div class="w-24 h-1 bg-brand-orange mx-auto rounded"></div>
+                <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Need specific parts or technical advice? Contact our sales team today.</p>
+            </div>
+
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <!-- Contact Info -->
+                <!-- Contact Info (Left Side) -->
                 <div>
-                    <span class="text-brand-orange font-bold tracking-widest uppercase text-sm">Get In Touch</span>
-                    <h2 class="text-4xl font-bold text-brand-dark mt-2 mb-6">REQUEST A QUOTE</h2>
-                    <p class="text-gray-600 mb-8">Need specific parts or a complete plant setup? Contact our sales team today. We usually respond within 1 hour.</p>
+                    <h3 class="text-2xl font-bold text-brand-dark mb-6">Contact Information</h3>
                     
                     <div class="space-y-6">
                         <div class="flex items-start">
@@ -624,35 +631,49 @@
                     </div>
                 </div>
 
-                <!-- Form/Map Area -->
+                <!-- Contact Form (Right Side) -->
                 <div class="bg-slate-50 p-8 rounded-lg border border-slate-200 shadow-inner">
-                    <h3 class="text-2xl font-bold mb-6 font-heading">Send us a message</h3>
-                    <form onsubmit="event.preventDefault(); window.open('https://wa.me/918923880893', '_blank');">
+                    <h3 class="text-2xl font-bold text-brand-dark mb-6">Quick Enquiry</h3>
+                    <form id="contactForm" onsubmit="submitEnquiry(event)">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                             <div>
-                                <label class="block text-xs font-bold uppercase text-gray-500 mb-1">Name</label>
-                                <input type="text" class="w-full bg-white border border-gray-300 rounded p-3 focus:outline-none focus:border-brand-orange" placeholder="Your Name">
+                                <label class="block text-xs font-bold uppercase text-gray-500 mb-1">Firm Name</label>
+                                <input type="text" id="firmName" class="w-full bg-white border border-gray-300 rounded p-3 focus:outline-none focus:border-brand-orange" placeholder="Company Name" required>
                             </div>
                             <div>
-                                <label class="block text-xs font-bold uppercase text-gray-500 mb-1">Phone</label>
-                                <input type="tel" class="w-full bg-white border border-gray-300 rounded p-3 focus:outline-none focus:border-brand-orange" placeholder="Your Number">
+                                <label class="block text-xs font-bold uppercase text-gray-500 mb-1">Client Name</label>
+                                <input type="text" id="clientName" class="w-full bg-white border border-gray-300 rounded p-3 focus:outline-none focus:border-brand-orange" placeholder="Your Name" required>
                             </div>
                         </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-gray-500 mb-1">Mobile Number</label>
+                                <input type="tel" id="mobile" class="w-full bg-white border border-gray-300 rounded p-3 focus:outline-none focus:border-brand-orange" placeholder="+91..." required>
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold uppercase text-gray-500 mb-1">Location</label>
+                                <input type="text" id="location" class="w-full bg-white border border-gray-300 rounded p-3 focus:outline-none focus:border-brand-orange" placeholder="City, State" required>
+                            </div>
+                        </div>
+
                         <div class="mb-4">
-                            <label class="block text-xs font-bold uppercase text-gray-500 mb-1">Requirement</label>
-                            <select class="w-full bg-white border border-gray-300 rounded p-3 focus:outline-none focus:border-brand-orange text-gray-600">
-                                <option>Complete Crushing Plant</option>
-                                <option>Jaw Crusher Spares</option>
-                                <option>Cone Crusher Spares</option>
-                                <option>VSI Spares</option>
-                                <option>Accessories</option>
-                                <option>General Inquiry</option>
+                            <label class="block text-xs font-bold uppercase text-gray-500 mb-1">Crusher Brand</label>
+                            <select id="crusherCompany" class="w-full bg-white border border-gray-300 rounded p-3 focus:outline-none focus:border-brand-orange text-gray-600">
+                                <option value="">Select Brand</option>
+                                <option value="Metso">Metso</option>
+                                <option value="Sandvik">Sandvik</option>
+                                <option value="Terex">Terex</option>
+                                <option value="Puzzolana">Puzzolana</option>
+                                <option value="Others">Others</option>
                             </select>
                         </div>
+
                         <div class="mb-6">
-                            <label class="block text-xs font-bold uppercase text-gray-500 mb-1">Message</label>
-                            <textarea class="w-full bg-white border border-gray-300 rounded p-3 focus:outline-none focus:border-brand-orange h-32" placeholder="Tell us about your machine model and parts needed..."></textarea>
+                            <label class="block text-xs font-bold uppercase text-gray-500 mb-1">Message / Problem</label>
+                            <textarea id="problem" class="w-full bg-white border border-gray-300 rounded p-3 focus:outline-none focus:border-brand-orange h-24" placeholder="Describe your requirement..."></textarea>
                         </div>
+
                         <button type="submit" class="w-full bg-brand-dark hover:bg-brand-orange text-white font-bold py-4 rounded transition-colors uppercase tracking-widest flex items-center justify-center gap-2">
                             Send via WhatsApp <i class="fab fa-whatsapp text-lg"></i>
                         </button>
@@ -666,19 +687,20 @@
     <footer class="bg-slate-900 text-slate-300 pt-16 border-t border-slate-800">
         <div class="container mx-auto px-4 pb-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-                <!-- Col 1 - Logo Updated Here Too -->
+                <!-- Col 1 - Logo Updated Here Too (Corrected path to ./images/Logo.png) -->
                 <div>
                     <div class="flex items-center gap-2 mb-4">
-                        <img src="./images/logo.png" alt="Rakantham Logo" class="h-10 w-auto bg-white rounded p-1">
-                        <h3 class="text-white text-2xl font-heading font-bold uppercase">Rakantham</h3>
+                        <img src="./images/Logo.png" alt="Rakantham Logo" class="h-10 w-auto bg-white rounded p-1" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+                        <h3 class="text-white text-2xl font-heading font-bold uppercase hidden">Rakantham</h3>
                     </div>
                     <p class="text-sm leading-relaxed mb-6 text-gray-400">
                         Your trusted partner for premium stone crusher spares. We ensure your plant keeps running with minimum downtime and maximum efficiency.
                     </p>
                     <div class="flex space-x-4">
-                        <a href="#" class="w-10 h-10 rounded bg-slate-800 flex items-center justify-center hover:bg-brand-orange hover:text-white transition-colors"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="w-10 h-10 rounded bg-slate-800 flex items-center justify-center hover:bg-brand-orange hover:text-white transition-colors"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="w-10 h-10 rounded bg-slate-800 flex items-center justify-center hover:bg-brand-orange hover:text-white transition-colors"><i class="fab fa-linkedin-in"></i></a>
+                        <!-- Updated Social Links -->
+                        <a href="https://www.facebook.com/rankanthamcrushersolution" target="_blank" class="w-10 h-10 rounded bg-slate-800 flex items-center justify-center hover:bg-brand-orange hover:text-white transition-colors"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/rakantham_crusher_solution/" target="_blank" class="w-10 h-10 rounded bg-slate-800 flex items-center justify-center hover:bg-brand-orange hover:text-white transition-colors"><i class="fab fa-instagram"></i></a>
+                        <a href="https://x.com/rakantham" target="_blank" class="w-10 h-10 rounded bg-slate-800 flex items-center justify-center hover:bg-brand-orange hover:text-white transition-colors"><i class="fab fa-x-twitter"></i></a>
                     </div>
                 </div>
 
@@ -711,6 +733,10 @@
                         <li class="flex justify-between">
                             <span>GSTIN:</span>
                             <span class="text-white font-mono">06FTFPS5696B1ZA</span>
+                        </li>
+                        <li class="flex justify-between mt-2">
+                            <span>MSME:</span>
+                            <span class="text-white font-mono text-xs">UDYAM-HR-03-0139386</span>
                         </li>
                     </ul>
                     <div class="mt-6 p-4 bg-slate-800 rounded border border-slate-700">
@@ -1002,6 +1028,34 @@
 
         // Initialize ROI on load
         calculateROI();
+
+        // --------------------------------------------------------
+        // CONTACT FORM SCRIPT
+        // --------------------------------------------------------
+        function submitEnquiry(event) {
+            event.preventDefault();
+
+            const firmName = document.getElementById('firmName').value;
+            const clientName = document.getElementById('clientName').value;
+            const mobile = document.getElementById('mobile').value;
+            const location = document.getElementById('location').value;
+            const crusherBrand = document.getElementById('crusherCompany').value || 'Not specified';
+            const message = document.getElementById('problem').value || 'Not specified';
+
+            const whatsappMessage = 
+                `🔧 *New Enquiry from Website*%0A%0A` +
+                `🏢 *Firm:* ${firmName}%0A` +
+                `👤 *Name:* ${clientName}%0A` +
+                `📱 *Mobile:* ${mobile}%0A` +
+                `📍 *Location:* ${location}%0A` +
+                `⚙️ *Crusher Brand:* ${crusherBrand}%0A` +
+                `📝 *Message:* ${message}`;
+
+            window.open(`https://wa.me/918923880893?text=${whatsappMessage}`, '_blank');
+            
+            // Optional: Reset form
+            document.getElementById('contactForm').reset();
+        }
 
 
         // --------------------------------------------------------

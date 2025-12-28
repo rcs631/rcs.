@@ -159,7 +159,7 @@
             <div class="flex justify-between items-center h-16">
                 <!-- Logo Updated to Image (Name corrected to Logo.png) -->
                 <a href="#" class="flex items-center gap-3 group">
-                    <img src="./images/Logo.png" alt="Rakantham Logo" class="h-12 w-auto object-contain transform group-hover:scale-105 transition-transform duration-300 bg-white rounded p-1">
+                    <img src="./images/Logo.png" alt="Rakantham Logo" class="h-16 w-auto object-contain transform group-hover:scale-105 transition-transform duration-300 bg-white rounded p-1" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
                     <div class="flex flex-col">
                         <span class="text-2xl font-bold font-heading uppercase leading-none tracking-wider">RAKANTHAM</span>
                         <span class="text-xs text-gray-400 font-sans tracking-widest uppercase">Crusher Solutions</span>
@@ -819,7 +819,7 @@
         // ----------------------------------------------------------------------
         // !!! IMPORTANT: PUT YOUR GEMINI API KEY HERE !!!
         // ----------------------------------------------------------------------
-        const API_KEY = "AIzaSyA_DkH5mDzZXgT94rjamQJ9iY-6uxlm6DE"; 
+        const API_KEY = ""; 
         // ----------------------------------------------------------------------
 
         // Data Source
@@ -1129,13 +1129,16 @@
             const chatBox = document.getElementById('chat-messages');
             const isAI = sender === 'ai';
             
+            // Format response if AI, otherwise keep as is (sanitize user input in real app)
+            const displayText = isAI ? formatAIResponse(text) : text;
+            
             const msgHTML = `
                 <div class="flex gap-2 ${isAI ? '' : 'flex-row-reverse'}">
                     <div class="${isAI ? 'w-auto px-2' : 'w-8'} h-8 ${isAI ? 'bg-brand-dark' : 'bg-brand-orange'} rounded-full flex items-center justify-center flex-shrink-0 text-white ${isAI ? 'text-[10px] font-bold' : 'text-xs'} mt-1">
                         ${isAI ? 'RAKANTHAM' : '<i class="fas fa-user"></i>'}
                     </div>
                     <div class="${isAI ? 'bg-white border border-gray-200 text-gray-700' : 'bg-brand-orange text-white'} p-3 rounded-lg ${isAI ? 'rounded-tl-none' : 'rounded-tr-none'} shadow-sm text-sm">
-                        ${text}
+                        ${displayText}
                     </div>
                 </div>
             `;
@@ -1167,10 +1170,37 @@
             if (el) el.remove();
         }
 
+        function formatAIResponse(text) {
+            if (!text) return "";
+            
+            // 1. Bold (**text**) -> <strong>text</strong>
+            let formatted = text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+            
+            // 2. Headers (### or ##) -> Bold line
+            formatted = formatted.replace(/^###\s*(.*?)$/gm, '<strong>$1</strong>');
+            formatted = formatted.replace(/^##\s*(.*?)$/gm, '<strong>$1</strong>');
+            
+            // 3. List items (* or -) -> Bullet point with newline
+            // This regex finds * or - at start of line
+            formatted = formatted.replace(/^\*\s+(.*)$/gm, '• $1');
+            formatted = formatted.replace(/^-\s+(.*)$/gm, '• $1');
+            
+            // 4. Newlines -> <br>
+            formatted = formatted.replace(/\n/g, '<br>');
+            
+            return formatted;
+        }
+
         async function callGeminiAPI(userQuery) {
-            if (!API_KEY || API_KEY === "YAHAN_APNI_API_KEY_DALEN") {
-                throw new Error("API Key missing! Please open the index.html file in Notepad and add your key at line 720.");
+            // Note: If running locally, you must replace the empty string below with your actual API key.
+            // In this preview environment, the key is handled automatically if left empty.
+            if (!API_KEY && window.location.hostname !== 'localhost' && !window.location.hostname.includes('127.0.0.1')) {
+                 // Logic to allow empty key in specific preview environments if needed, 
+                 // otherwise user must provide it.
             }
+            
+            // Removed the strict error check so the preview doesn't crash immediately.
+            // if (!API_KEY || API_KEY === "YAHAN_APNI_API_KEY_DALEN") { ... }
 
             const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${API_KEY}`;
 
@@ -1215,6 +1245,3 @@
     </script>
 </body>
 </html>
-s
-
-
